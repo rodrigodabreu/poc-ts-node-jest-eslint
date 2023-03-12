@@ -1,4 +1,7 @@
 {
-  "_comment1": "Rodar o eslint em todos os arquivos que estão no commit e verificar se eles estão formatados com o prettier",
-  "*.ts": ["yarn eslint 'src/**' --fix", "yarn prettier --check 'src/**'"]
+  "*.ts": [
+    "yarn eslint 'src/**' --fix",
+    "yarn prettier --check 'src/**'",
+    "yarn test:staged"
+  ]
 }
